@@ -1,0 +1,356 @@
+Simulator report for MIC1
+Sun Aug 16 17:50:06 2026
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 192 nodes    ;
+; Simulation Coverage         ;      58.86 % ;
+; Total Number of Transitions ; 229          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                            ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                          ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                       ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                             ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                              ;               ;
+; Vector input source                                                                        ; C:/Users/maris/OneDrive/Área de Trabalho/cefet 4/aocii/mariana_kaori/SHIFTER.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                               ; On            ;
+; Check outputs                                                                              ; Off                                                                              ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                               ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                               ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                               ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                               ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                              ; Off           ;
+; Detect glitches                                                                            ; Off                                                                              ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                              ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                              ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                              ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                              ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                               ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                       ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                              ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                              ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                             ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      58.86 % ;
+; Total nodes checked                                 ; 192          ;
+; Total output ports checked                          ; 158          ;
+; Total output ports with complete 1/0-value coverage ; 93           ;
+; Total output ports with no 1/0-value coverage       ; 36           ;
+; Total output ports with no 1-value coverage         ; 61           ;
+; Total output ports with no 0-value coverage         ; 40           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                            ;
++----------------------------------+----------------------------------+------------------+
+; Node Name                        ; Output Port Name                 ; Output Port Type ;
++----------------------------------+----------------------------------+------------------+
+; |SHIFTER|OUTPUT[30]              ; |SHIFTER|OUTPUT[30]              ; pin_out          ;
+; |SHIFTER|OUTPUT[29]              ; |SHIFTER|OUTPUT[29]              ; pin_out          ;
+; |SHIFTER|OUTPUT[28]              ; |SHIFTER|OUTPUT[28]              ; pin_out          ;
+; |SHIFTER|OUTPUT[27]              ; |SHIFTER|OUTPUT[27]              ; pin_out          ;
+; |SHIFTER|OUTPUT[26]              ; |SHIFTER|OUTPUT[26]              ; pin_out          ;
+; |SHIFTER|OUTPUT[25]              ; |SHIFTER|OUTPUT[25]              ; pin_out          ;
+; |SHIFTER|OUTPUT[24]              ; |SHIFTER|OUTPUT[24]              ; pin_out          ;
+; |SHIFTER|OUTPUT[23]              ; |SHIFTER|OUTPUT[23]              ; pin_out          ;
+; |SHIFTER|OUTPUT[22]              ; |SHIFTER|OUTPUT[22]              ; pin_out          ;
+; |SHIFTER|OUTPUT[21]              ; |SHIFTER|OUTPUT[21]              ; pin_out          ;
+; |SHIFTER|OUTPUT[20]              ; |SHIFTER|OUTPUT[20]              ; pin_out          ;
+; |SHIFTER|OUTPUT[19]              ; |SHIFTER|OUTPUT[19]              ; pin_out          ;
+; |SHIFTER|OUTPUT[18]              ; |SHIFTER|OUTPUT[18]              ; pin_out          ;
+; |SHIFTER|OUTPUT[17]              ; |SHIFTER|OUTPUT[17]              ; pin_out          ;
+; |SHIFTER|OUTPUT[16]              ; |SHIFTER|OUTPUT[16]              ; pin_out          ;
+; |SHIFTER|OUTPUT[15]              ; |SHIFTER|OUTPUT[15]              ; pin_out          ;
+; |SHIFTER|OUTPUT[14]              ; |SHIFTER|OUTPUT[14]              ; pin_out          ;
+; |SHIFTER|OUTPUT[13]              ; |SHIFTER|OUTPUT[13]              ; pin_out          ;
+; |SHIFTER|OUTPUT[12]              ; |SHIFTER|OUTPUT[12]              ; pin_out          ;
+; |SHIFTER|OUTPUT[11]              ; |SHIFTER|OUTPUT[11]              ; pin_out          ;
+; |SHIFTER|OUTPUT[10]              ; |SHIFTER|OUTPUT[10]              ; pin_out          ;
+; |SHIFTER|inst5[30]               ; |SHIFTER|inst5[30]               ; out0             ;
+; |SHIFTER|inst5[29]               ; |SHIFTER|inst5[29]               ; out0             ;
+; |SHIFTER|inst5[28]               ; |SHIFTER|inst5[28]               ; out0             ;
+; |SHIFTER|inst5[27]               ; |SHIFTER|inst5[27]               ; out0             ;
+; |SHIFTER|inst5[26]               ; |SHIFTER|inst5[26]               ; out0             ;
+; |SHIFTER|inst5[25]               ; |SHIFTER|inst5[25]               ; out0             ;
+; |SHIFTER|inst5[24]               ; |SHIFTER|inst5[24]               ; out0             ;
+; |SHIFTER|inst5[23]               ; |SHIFTER|inst5[23]               ; out0             ;
+; |SHIFTER|inst5[22]               ; |SHIFTER|inst5[22]               ; out0             ;
+; |SHIFTER|inst5[21]               ; |SHIFTER|inst5[21]               ; out0             ;
+; |SHIFTER|inst5[20]               ; |SHIFTER|inst5[20]               ; out0             ;
+; |SHIFTER|inst5[19]               ; |SHIFTER|inst5[19]               ; out0             ;
+; |SHIFTER|inst5[18]               ; |SHIFTER|inst5[18]               ; out0             ;
+; |SHIFTER|inst5[17]               ; |SHIFTER|inst5[17]               ; out0             ;
+; |SHIFTER|inst5[16]               ; |SHIFTER|inst5[16]               ; out0             ;
+; |SHIFTER|inst5[15]               ; |SHIFTER|inst5[15]               ; out0             ;
+; |SHIFTER|inst5[14]               ; |SHIFTER|inst5[14]               ; out0             ;
+; |SHIFTER|inst5[13]               ; |SHIFTER|inst5[13]               ; out0             ;
+; |SHIFTER|inst5[12]               ; |SHIFTER|inst5[12]               ; out0             ;
+; |SHIFTER|inst5[11]               ; |SHIFTER|inst5[11]               ; out0             ;
+; |SHIFTER|inst5[10]               ; |SHIFTER|inst5[10]               ; out0             ;
+; |SHIFTER|inst3[31]               ; |SHIFTER|inst3[31]               ; out0             ;
+; |SHIFTER|MIR[22]                 ; |SHIFTER|MIR[22]                 ; out              ;
+; |SHIFTER|INPUT[30]               ; |SHIFTER|INPUT[30]               ; out              ;
+; |SHIFTER|INPUT[28]               ; |SHIFTER|INPUT[28]               ; out              ;
+; |SHIFTER|INPUT[27]               ; |SHIFTER|INPUT[27]               ; out              ;
+; |SHIFTER|INPUT[26]               ; |SHIFTER|INPUT[26]               ; out              ;
+; |SHIFTER|INPUT[25]               ; |SHIFTER|INPUT[25]               ; out              ;
+; |SHIFTER|INPUT[24]               ; |SHIFTER|INPUT[24]               ; out              ;
+; |SHIFTER|INPUT[23]               ; |SHIFTER|INPUT[23]               ; out              ;
+; |SHIFTER|INPUT[21]               ; |SHIFTER|INPUT[21]               ; out              ;
+; |SHIFTER|INPUT[19]               ; |SHIFTER|INPUT[19]               ; out              ;
+; |SHIFTER|INPUT[18]               ; |SHIFTER|INPUT[18]               ; out              ;
+; |SHIFTER|INPUT[17]               ; |SHIFTER|INPUT[17]               ; out              ;
+; |SHIFTER|INPUT[16]               ; |SHIFTER|INPUT[16]               ; out              ;
+; |SHIFTER|INPUT[15]               ; |SHIFTER|INPUT[15]               ; out              ;
+; |SHIFTER|INPUT[14]               ; |SHIFTER|INPUT[14]               ; out              ;
+; |SHIFTER|INPUT[13]               ; |SHIFTER|INPUT[13]               ; out              ;
+; |SHIFTER|INPUT[12]               ; |SHIFTER|INPUT[12]               ; out              ;
+; |SHIFTER|INPUT[10]               ; |SHIFTER|INPUT[10]               ; out              ;
+; |SHIFTER|INPUT[8]                ; |SHIFTER|INPUT[8]                ; out              ;
+; |SHIFTER|INPUT[7]                ; |SHIFTER|INPUT[7]                ; out              ;
+; |SHIFTER|INPUT[6]                ; |SHIFTER|INPUT[6]                ; out              ;
+; |SHIFTER|INPUT[5]                ; |SHIFTER|INPUT[5]                ; out              ;
+; |SHIFTER|INPUT[4]                ; |SHIFTER|INPUT[4]                ; out              ;
+; |SHIFTER|INPUT[3]                ; |SHIFTER|INPUT[3]                ; out              ;
+; |SHIFTER|inst4[31]               ; |SHIFTER|inst4[31]               ; out0             ;
+; |SHIFTER|inst4[30]               ; |SHIFTER|inst4[30]               ; out0             ;
+; |SHIFTER|inst4[29]               ; |SHIFTER|inst4[29]               ; out0             ;
+; |SHIFTER|inst4[28]               ; |SHIFTER|inst4[28]               ; out0             ;
+; |SHIFTER|inst4[27]               ; |SHIFTER|inst4[27]               ; out0             ;
+; |SHIFTER|inst4[26]               ; |SHIFTER|inst4[26]               ; out0             ;
+; |SHIFTER|inst4[25]               ; |SHIFTER|inst4[25]               ; out0             ;
+; |SHIFTER|inst4[24]               ; |SHIFTER|inst4[24]               ; out0             ;
+; |SHIFTER|inst4[23]               ; |SHIFTER|inst4[23]               ; out0             ;
+; |SHIFTER|inst4[22]               ; |SHIFTER|inst4[22]               ; out0             ;
+; |SHIFTER|inst4[21]               ; |SHIFTER|inst4[21]               ; out0             ;
+; |SHIFTER|inst4[20]               ; |SHIFTER|inst4[20]               ; out0             ;
+; |SHIFTER|inst4[19]               ; |SHIFTER|inst4[19]               ; out0             ;
+; |SHIFTER|inst4[18]               ; |SHIFTER|inst4[18]               ; out0             ;
+; |SHIFTER|inst4[17]               ; |SHIFTER|inst4[17]               ; out0             ;
+; |SHIFTER|inst4[16]               ; |SHIFTER|inst4[16]               ; out0             ;
+; |SHIFTER|inst4[15]               ; |SHIFTER|inst4[15]               ; out0             ;
+; |SHIFTER|inst4[14]               ; |SHIFTER|inst4[14]               ; out0             ;
+; |SHIFTER|inst4[13]               ; |SHIFTER|inst4[13]               ; out0             ;
+; |SHIFTER|inst4[12]               ; |SHIFTER|inst4[12]               ; out0             ;
+; |SHIFTER|inst4[11]               ; |SHIFTER|inst4[11]               ; out0             ;
+; |SHIFTER|inst4[10]               ; |SHIFTER|inst4[10]               ; out0             ;
+; |SHIFTER|inst2                   ; |SHIFTER|inst2                   ; out0             ;
+; |SHIFTER|inst12                  ; |SHIFTER|inst12                  ; out0             ;
+; |SHIFTER|DECODER_2TO4:inst|inst1 ; |SHIFTER|DECODER_2TO4:inst|inst1 ; out0             ;
+; |SHIFTER|DECODER_2TO4:inst|inst2 ; |SHIFTER|DECODER_2TO4:inst|inst2 ; out0             ;
++----------------------------------+----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                               ;
++----------------------------------+----------------------------------+------------------+
+; Node Name                        ; Output Port Name                 ; Output Port Type ;
++----------------------------------+----------------------------------+------------------+
+; |SHIFTER|N                       ; |SHIFTER|N                       ; pin_out          ;
+; |SHIFTER|OUTPUT[31]              ; |SHIFTER|OUTPUT[31]              ; pin_out          ;
+; |SHIFTER|OUTPUT[9]               ; |SHIFTER|OUTPUT[9]               ; pin_out          ;
+; |SHIFTER|OUTPUT[8]               ; |SHIFTER|OUTPUT[8]               ; pin_out          ;
+; |SHIFTER|OUTPUT[7]               ; |SHIFTER|OUTPUT[7]               ; pin_out          ;
+; |SHIFTER|OUTPUT[6]               ; |SHIFTER|OUTPUT[6]               ; pin_out          ;
+; |SHIFTER|OUTPUT[5]               ; |SHIFTER|OUTPUT[5]               ; pin_out          ;
+; |SHIFTER|OUTPUT[4]               ; |SHIFTER|OUTPUT[4]               ; pin_out          ;
+; |SHIFTER|OUTPUT[3]               ; |SHIFTER|OUTPUT[3]               ; pin_out          ;
+; |SHIFTER|OUTPUT[2]               ; |SHIFTER|OUTPUT[2]               ; pin_out          ;
+; |SHIFTER|OUTPUT[1]               ; |SHIFTER|OUTPUT[1]               ; pin_out          ;
+; |SHIFTER|OUTPUT[0]               ; |SHIFTER|OUTPUT[0]               ; pin_out          ;
+; |SHIFTER|inst5[31]               ; |SHIFTER|inst5[31]               ; out0             ;
+; |SHIFTER|inst5[9]                ; |SHIFTER|inst5[9]                ; out0             ;
+; |SHIFTER|inst5[8]                ; |SHIFTER|inst5[8]                ; out0             ;
+; |SHIFTER|INPUT[31]               ; |SHIFTER|INPUT[31]               ; out              ;
+; |SHIFTER|INPUT[29]               ; |SHIFTER|INPUT[29]               ; out              ;
+; |SHIFTER|INPUT[22]               ; |SHIFTER|INPUT[22]               ; out              ;
+; |SHIFTER|INPUT[20]               ; |SHIFTER|INPUT[20]               ; out              ;
+; |SHIFTER|INPUT[11]               ; |SHIFTER|INPUT[11]               ; out              ;
+; |SHIFTER|INPUT[9]                ; |SHIFTER|INPUT[9]                ; out              ;
+; |SHIFTER|INPUT[2]                ; |SHIFTER|INPUT[2]                ; out              ;
+; |SHIFTER|INPUT[1]                ; |SHIFTER|INPUT[1]                ; out              ;
+; |SHIFTER|INPUT[0]                ; |SHIFTER|INPUT[0]                ; out              ;
+; |SHIFTER|inst4[9]                ; |SHIFTER|inst4[9]                ; out0             ;
+; |SHIFTER|inst4[8]                ; |SHIFTER|inst4[8]                ; out0             ;
+; |SHIFTER|inst1[31]               ; |SHIFTER|inst1[31]               ; out0             ;
+; |SHIFTER|inst1[30]               ; |SHIFTER|inst1[30]               ; out0             ;
+; |SHIFTER|inst1[29]               ; |SHIFTER|inst1[29]               ; out0             ;
+; |SHIFTER|inst1[28]               ; |SHIFTER|inst1[28]               ; out0             ;
+; |SHIFTER|inst1[27]               ; |SHIFTER|inst1[27]               ; out0             ;
+; |SHIFTER|inst1[26]               ; |SHIFTER|inst1[26]               ; out0             ;
+; |SHIFTER|inst1[25]               ; |SHIFTER|inst1[25]               ; out0             ;
+; |SHIFTER|inst1[24]               ; |SHIFTER|inst1[24]               ; out0             ;
+; |SHIFTER|inst1[23]               ; |SHIFTER|inst1[23]               ; out0             ;
+; |SHIFTER|inst1[22]               ; |SHIFTER|inst1[22]               ; out0             ;
+; |SHIFTER|inst1[21]               ; |SHIFTER|inst1[21]               ; out0             ;
+; |SHIFTER|inst1[20]               ; |SHIFTER|inst1[20]               ; out0             ;
+; |SHIFTER|inst1[19]               ; |SHIFTER|inst1[19]               ; out0             ;
+; |SHIFTER|inst1[18]               ; |SHIFTER|inst1[18]               ; out0             ;
+; |SHIFTER|inst1[17]               ; |SHIFTER|inst1[17]               ; out0             ;
+; |SHIFTER|inst1[16]               ; |SHIFTER|inst1[16]               ; out0             ;
+; |SHIFTER|inst1[15]               ; |SHIFTER|inst1[15]               ; out0             ;
+; |SHIFTER|inst1[14]               ; |SHIFTER|inst1[14]               ; out0             ;
+; |SHIFTER|inst1[13]               ; |SHIFTER|inst1[13]               ; out0             ;
+; |SHIFTER|inst1[12]               ; |SHIFTER|inst1[12]               ; out0             ;
+; |SHIFTER|inst1[11]               ; |SHIFTER|inst1[11]               ; out0             ;
+; |SHIFTER|inst1[10]               ; |SHIFTER|inst1[10]               ; out0             ;
+; |SHIFTER|inst1[9]                ; |SHIFTER|inst1[9]                ; out0             ;
+; |SHIFTER|inst1[8]                ; |SHIFTER|inst1[8]                ; out0             ;
+; |SHIFTER|inst1[7]                ; |SHIFTER|inst1[7]                ; out0             ;
+; |SHIFTER|inst1[6]                ; |SHIFTER|inst1[6]                ; out0             ;
+; |SHIFTER|inst1[5]                ; |SHIFTER|inst1[5]                ; out0             ;
+; |SHIFTER|inst1[4]                ; |SHIFTER|inst1[4]                ; out0             ;
+; |SHIFTER|inst1[3]                ; |SHIFTER|inst1[3]                ; out0             ;
+; |SHIFTER|inst1[2]                ; |SHIFTER|inst1[2]                ; out0             ;
+; |SHIFTER|inst1[1]                ; |SHIFTER|inst1[1]                ; out0             ;
+; |SHIFTER|inst1[0]                ; |SHIFTER|inst1[0]                ; out0             ;
+; |SHIFTER|inst11                  ; |SHIFTER|inst11                  ; out0             ;
+; |SHIFTER|inst13                  ; |SHIFTER|inst13                  ; out0             ;
+; |SHIFTER|DECODER_2TO4:inst|inst3 ; |SHIFTER|DECODER_2TO4:inst|inst3 ; out0             ;
++----------------------------------+----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                             ;
++---------------------------------+---------------------------------+------------------+
+; Node Name                       ; Output Port Name                ; Output Port Type ;
++---------------------------------+---------------------------------+------------------+
+; |SHIFTER|OUTPUT[8]              ; |SHIFTER|OUTPUT[8]              ; pin_out          ;
+; |SHIFTER|OUTPUT[7]              ; |SHIFTER|OUTPUT[7]              ; pin_out          ;
+; |SHIFTER|OUTPUT[6]              ; |SHIFTER|OUTPUT[6]              ; pin_out          ;
+; |SHIFTER|OUTPUT[5]              ; |SHIFTER|OUTPUT[5]              ; pin_out          ;
+; |SHIFTER|OUTPUT[4]              ; |SHIFTER|OUTPUT[4]              ; pin_out          ;
+; |SHIFTER|OUTPUT[3]              ; |SHIFTER|OUTPUT[3]              ; pin_out          ;
+; |SHIFTER|OUTPUT[1]              ; |SHIFTER|OUTPUT[1]              ; pin_out          ;
+; |SHIFTER|inst5[8]               ; |SHIFTER|inst5[8]               ; out0             ;
+; |SHIFTER|MIR[23]                ; |SHIFTER|MIR[23]                ; out              ;
+; |SHIFTER|INPUT[1]               ; |SHIFTER|INPUT[1]               ; out              ;
+; |SHIFTER|inst4[9]               ; |SHIFTER|inst4[9]               ; out0             ;
+; |SHIFTER|inst4[8]               ; |SHIFTER|inst4[8]               ; out0             ;
+; |SHIFTER|inst1[30]              ; |SHIFTER|inst1[30]              ; out0             ;
+; |SHIFTER|inst1[28]              ; |SHIFTER|inst1[28]              ; out0             ;
+; |SHIFTER|inst1[27]              ; |SHIFTER|inst1[27]              ; out0             ;
+; |SHIFTER|inst1[26]              ; |SHIFTER|inst1[26]              ; out0             ;
+; |SHIFTER|inst1[25]              ; |SHIFTER|inst1[25]              ; out0             ;
+; |SHIFTER|inst1[24]              ; |SHIFTER|inst1[24]              ; out0             ;
+; |SHIFTER|inst1[23]              ; |SHIFTER|inst1[23]              ; out0             ;
+; |SHIFTER|inst1[21]              ; |SHIFTER|inst1[21]              ; out0             ;
+; |SHIFTER|inst1[19]              ; |SHIFTER|inst1[19]              ; out0             ;
+; |SHIFTER|inst1[18]              ; |SHIFTER|inst1[18]              ; out0             ;
+; |SHIFTER|inst1[17]              ; |SHIFTER|inst1[17]              ; out0             ;
+; |SHIFTER|inst1[16]              ; |SHIFTER|inst1[16]              ; out0             ;
+; |SHIFTER|inst1[15]              ; |SHIFTER|inst1[15]              ; out0             ;
+; |SHIFTER|inst1[14]              ; |SHIFTER|inst1[14]              ; out0             ;
+; |SHIFTER|inst1[13]              ; |SHIFTER|inst1[13]              ; out0             ;
+; |SHIFTER|inst1[12]              ; |SHIFTER|inst1[12]              ; out0             ;
+; |SHIFTER|inst1[10]              ; |SHIFTER|inst1[10]              ; out0             ;
+; |SHIFTER|inst1[8]               ; |SHIFTER|inst1[8]               ; out0             ;
+; |SHIFTER|inst1[7]               ; |SHIFTER|inst1[7]               ; out0             ;
+; |SHIFTER|inst1[6]               ; |SHIFTER|inst1[6]               ; out0             ;
+; |SHIFTER|inst1[5]               ; |SHIFTER|inst1[5]               ; out0             ;
+; |SHIFTER|inst1[4]               ; |SHIFTER|inst1[4]               ; out0             ;
+; |SHIFTER|inst1[3]               ; |SHIFTER|inst1[3]               ; out0             ;
+; |SHIFTER|inst1[1]               ; |SHIFTER|inst1[1]               ; out0             ;
+; |SHIFTER|Z                      ; |SHIFTER|Z                      ; pin_out          ;
+; |SHIFTER|inst14                 ; |SHIFTER|inst14                 ; out0             ;
+; |SHIFTER|inst13                 ; |SHIFTER|inst13                 ; out0             ;
+; |SHIFTER|DECODER_2TO4:inst|inst ; |SHIFTER|DECODER_2TO4:inst|inst ; out0             ;
++---------------------------------+---------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Aug 16 17:50:05 2026
+Info: Command: quartus_sim --simulation_results_format=VWF MIC1 -c MIC1
+Info (324025): Using vector source file "C:/Users/maris/OneDrive/Área de Trabalho/cefet 4/aocii/mariana_kaori/SHIFTER.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      58.86 %
+Info (328052): Number of transitions in simulation is 229
+Info (324045): Vector file MIC1.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4446 megabytes
+    Info: Processing ended: Sun Aug 16 17:50:06 2026
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
