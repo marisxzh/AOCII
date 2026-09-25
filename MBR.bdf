@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 48 56 216 72)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLOCK" (rect 5 0 43 12)(font "Arial" ))
+	(text "CLOCK" (rect 5 0 42 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 48 88 216 104)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "LOAD" (rect 5 0 35 12)(font "Arial" ))
+	(text "LOAD" (rect 5 0 34 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 0 120 216 136)
 	(text "INPUT" (rect 173 0 201 10)(font "Arial" (font_size 6)))
-	(text "PROGRAM_BYTE[7..0]" (rect 5 0 121 12)(font "Arial" ))
+	(text "PROGRAM_BYTE[7..0]" (rect 5 0 120 12)(font "Arial" ))
 	(pt 216 8)
 	(drawing
 		(line (pt 132 12)(pt 157 12))
@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 48 152 216 168)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MIR[35..0]" (rect 5 0 57 12)(font "Arial" ))
+	(text "MIR[35..0]" (rect 5 0 56 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -717,11 +717,6 @@ applicable agreement for further details.
 	(pt 232 304)
 )
 (connector
-	(text "MBR_B" (rect 274 376 310 388)(font "Arial" ))
-	(pt 264 392)
-	(pt 296 392)
-)
-(connector
 	(text "MIR[1]" (rect 42 368 75 380)(font "Arial" ))
 	(pt 200 384)
 	(pt 32 384)
@@ -776,11 +771,6 @@ applicable agreement for further details.
 (connector
 	(pt 136 424)
 	(pt 160 424)
-)
-(connector
-	(text "MBRU_B" (rect 274 616 318 628)(font "Arial" ))
-	(pt 264 632)
-	(pt 296 632)
 )
 (connector
 	(pt 200 608)
@@ -953,11 +943,6 @@ applicable agreement for further details.
 	(pt 512 440)
 )
 (connector
-	(text "MBR_B" (rect 530 488 566 500)(font "Arial" ))
-	(pt 656 504)
-	(pt 512 504)
-)
-(connector
 	(text "MBR[31..0]" (rect 520 440 575 452)(font "Arial" ))
 	(pt 656 456)
 	(pt 512 456)
@@ -974,15 +959,48 @@ applicable agreement for further details.
 	(pt 512 664)
 )
 (connector
-	(text "MBR[31..0]" (rect 520 664 575 676)(font "Arial" ))
-	(pt 656 680)
-	(pt 512 680)
-	(bus)
-)
-(connector
 	(text "MBR_B" (rect 530 712 566 724)(font "Arial" ))
 	(pt 656 728)
 	(pt 512 728)
+)
+(connector
+	(pt 216 64)
+	(pt 264 64)
+)
+(connector
+	(pt 216 128)
+	(pt 264 128)
+	(bus)
+)
+(connector
+	(pt 216 160)
+	(pt 264 160)
+	(bus)
+)
+(connector
+	(pt 216 96)
+	(pt 264 96)
+)
+(connector
+	(text "MBR_A" (rect 274 376 311 388)(font "Arial" ))
+	(pt 264 392)
+	(pt 296 392)
+)
+(connector
+	(text "MBR_A" (rect 530 488 567 500)(font "Arial" ))
+	(pt 656 504)
+	(pt 512 504)
+)
+(connector
+	(text "MBR_B" (rect 274 616 310 628)(font "Arial" ))
+	(pt 264 632)
+	(pt 296 632)
+)
+(connector
+	(text "MBRU[31..0]" (rect 520 664 583 676)(font "Arial" ))
+	(pt 656 680)
+	(pt 512 680)
+	(bus)
 )
 (junction (pt 104 304))
 (junction (pt 56 848))

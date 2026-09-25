@@ -132,7 +132,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 192 144 408 336)
+	(rect 208 144 424 336)
 	(text "REGISTRADOR_32bits" (rect 5 0 132 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 176 25 188)(font "Arial" ))
 	(port
@@ -344,38 +344,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -72 504 -8 552)
-	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "inst" (rect 3 37 20 49)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 14 16))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(line (pt 0 32)(pt 14 32))
-	)
-	(port
-		(pt 64 24)
-		(output)
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(line (pt 42 24)(pt 64 24))
-	)
-	(drawing
-		(line (pt 14 12)(pt 30 12))
-		(line (pt 14 37)(pt 31 37))
-		(line (pt 14 12)(pt 14 37))
-		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
-	)
-)
-(symbol
 	(rect -224 440 -160 488)
 	(text "OR2" (rect 1 0 19 10)(font "Arial" (font_size 6)))
 	(text "inst6" (rect 3 37 26 49)(font "Arial" ))
@@ -431,6 +399,38 @@ applicable agreement for further details.
 		(line (pt 13 7)(pt 31 16))
 		(line (pt 13 25)(pt 31 16))
 		(circle (rect 31 12 39 20))
+	)
+)
+(symbol
+	(rect -72 544 -8 592)
+	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
+	(text "inst30" (rect 3 37 32 49)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
+		(line (pt 0 32)(pt 14 32))
+	)
+	(port
+		(pt 64 24)
+		(output)
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
+		(line (pt 42 24)(pt 64 24))
+	)
+	(drawing
+		(line (pt 14 12)(pt 30 12))
+		(line (pt 14 37)(pt 31 37))
+		(line (pt 14 12)(pt 14 37))
+		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
 	)
 )
 (connector
@@ -498,36 +498,11 @@ applicable agreement for further details.
 	(pt -400 528)
 )
 (connector
-	(pt -232 576)
-	(pt -232 536)
-)
-(connector
-	(pt -232 536)
-	(pt -72 536)
-)
-(connector
 	(pt -160 464)
 	(pt -136 464)
 )
 (connector
-	(pt -136 464)
-	(pt -136 520)
-)
-(connector
-	(pt -136 520)
-	(pt -72 520)
-)
-(connector
-	(text "CLOCKF" (rect 0 512 44 524)(font "Arial" ))
-	(pt -8 528)
-	(pt 112 528)
-)
-(connector
 	(pt -480 528)
-	(pt -480 576)
-)
-(connector
-	(pt -232 576)
 	(pt -480 576)
 )
 (connector
@@ -559,7 +534,7 @@ applicable agreement for further details.
 )
 (connector
 	(pt 488 176)
-	(pt 408 176)
+	(pt 424 176)
 	(bus)
 )
 (connector
@@ -569,7 +544,7 @@ applicable agreement for further details.
 )
 (connector
 	(pt 456 192)
-	(pt 408 192)
+	(pt 424 192)
 	(bus)
 )
 (connector
@@ -594,42 +569,59 @@ applicable agreement for further details.
 )
 (connector
 	(pt -48 176)
-	(pt 192 176)
+	(pt 208 176)
 	(bus)
 )
 (connector
-	(text "CLOCKF" (rect 72 176 116 188)(font "Arial" ))
-	(pt 64 192)
-	(pt 192 192)
+	(text "CLOCKF" (rect 88 176 132 188)(font "Arial" ))
+	(pt 80 192)
+	(pt 208 192)
 )
 (connector
-	(text "LOAD" (rect 80 192 109 204)(font "Arial" ))
-	(pt 72 208)
-	(pt 192 208)
+	(text "LOAD" (rect 96 192 125 204)(font "Arial" ))
+	(pt 88 208)
+	(pt 208 208)
 )
 (connector
-	(text "IN_C[31..0]" (rect -16 208 41 220)(font "Arial" ))
-	(pt -24 224)
-	(pt 192 224)
+	(text "IN_C[31..0]" (rect 0 208 57 220)(font "Arial" ))
+	(pt -8 224)
+	(pt 208 224)
 	(bus)
 )
 (connector
 	(pt -256 240)
-	(pt 192 240)
+	(pt 208 240)
 )
 (connector
-	(text "DATA_IN[31..0]" (rect -16 240 61 252)(font "Arial" ))
-	(pt -24 256)
-	(pt 192 256)
+	(text "DATA_IN[31..0]" (rect 0 240 77 252)(font "Arial" ))
+	(pt -8 256)
+	(pt 208 256)
 	(bus)
 )
 (connector
 	(pt 64 272)
-	(pt 192 272)
+	(pt 208 272)
 )
 (connector
 	(pt 120 288)
-	(pt 192 288)
+	(pt 208 288)
+)
+(connector
+	(pt -136 464)
+	(pt -136 560)
+)
+(connector
+	(pt -136 560)
+	(pt -72 560)
+)
+(connector
+	(text "CLOCKF" (rect 0 552 44 564)(font "Arial" ))
+	(pt -8 568)
+	(pt 112 568)
+)
+(connector
+	(pt -480 576)
+	(pt -72 576)
 )
 (junction (pt -256 472))
 (junction (pt -480 528))
