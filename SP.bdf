@@ -37,54 +37,6 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 80 176 256 192)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "DATA_IN[0..31]" (rect 5 0 82 12)(font "Arial" ))
-	(pt 176 8)
-	(drawing
-		(line (pt 92 12)(pt 117 12))
-		(line (pt 92 4)(pt 117 4))
-		(line (pt 121 8)(pt 176 8))
-		(line (pt 92 12)(pt 92 4))
-		(line (pt 117 4)(pt 121 8))
-		(line (pt 117 12)(pt 121 8))
-	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 88 200 256 216)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "C[31..0]" (rect 5 0 45 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
-	(rect 88 224 256 240)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "MEM_READ" (rect 5 0 65 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 88 56 256 72)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "MIR[35..0]" (rect 5 0 56 12)(font "Arial" ))
@@ -103,7 +55,23 @@ applicable agreement for further details.
 	(input)
 	(rect 88 128 256 144)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "LOAD" (rect 5 0 35 12)(font "Arial" ))
+	(text "LOAD" (rect 5 0 34 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 88 200 256 216)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "IN_C[31..0]" (rect 5 0 62 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -119,7 +87,7 @@ applicable agreement for further details.
 	(output)
 	(rect 912 320 1088 336)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "B_BUS[31..0]" (rect 90 0 157 12)(font "Arial" ))
+	(text "OUT_B[31..0]" (rect 90 0 157 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -332,6 +300,22 @@ applicable agreement for further details.
 	)
 	(flipx)
 )
+(symbol
+	(rect 384 480 416 496)
+	(text "VCC" (rect 7 6 27 16)(font "Arial" (font_size 6)))
+	(text "inst4" (rect 3 -1 26 11)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 -3 24 9)(font "Courier New" (bold))(invisible))
+		(line (pt 16 0)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+	(flipx)
+)
 (connector
 	(pt 304 136)
 	(pt 256 136)
@@ -341,18 +325,9 @@ applicable agreement for further details.
 	(pt 304 160)
 )
 (connector
-	(pt 256 184)
-	(pt 304 184)
-	(bus)
-)
-(connector
 	(pt 256 208)
 	(pt 304 208)
 	(bus)
-)
-(connector
-	(pt 256 232)
-	(pt 304 232)
 )
 (connector
 	(pt 256 64)
@@ -363,11 +338,6 @@ applicable agreement for further details.
 	(text "LOAD" (rect 516 344 545 356)(font "Arial" ))
 	(pt 592 360)
 	(pt 496 360)
-)
-(connector
-	(text "MEM_READ" (rect 504 376 564 388)(font "Arial" ))
-	(pt 592 392)
-	(pt 496 392)
 )
 (connector
 	(pt 592 344)
@@ -390,12 +360,6 @@ applicable agreement for further details.
 (connector
 	(pt 448 304)
 	(pt 584 304)
-)
-(connector
-	(text "C[31..0]" (rect 360 360 400 372)(font "Arial" ))
-	(pt 592 376)
-	(pt 352 376)
-	(bus)
 )
 (connector
 	(text "MIR[1]" (rect 122 408 155 420)(font "Arial" ))
@@ -452,5 +416,20 @@ applicable agreement for further details.
 (connector
 	(pt 808 328)
 	(pt 912 328)
+	(bus)
+)
+(connector
+	(pt 400 392)
+	(pt 400 480)
+)
+(connector
+	(text "<<__$DEF_ALIAS169>>" (rect 504 376 622 388)(font "Arial" )(invisible))
+	(pt 400 392)
+	(pt 592 392)
+)
+(connector
+	(text "IN_C[31..0]" (rect 360 360 417 372)(font "Arial" ))
+	(pt 592 376)
+	(pt 352 376)
 	(bus)
 )

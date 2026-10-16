@@ -69,25 +69,9 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 72 184 248 200)
-	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
-	(text "DATA_IN[0..31]" (rect 5 0 82 12)(font "Arial" ))
-	(pt 176 8)
-	(drawing
-		(line (pt 92 12)(pt 117 12))
-		(line (pt 92 4)(pt 117 4))
-		(line (pt 121 8)(pt 176 8))
-		(line (pt 92 12)(pt 92 4))
-		(line (pt 117 4)(pt 121 8))
-		(line (pt 117 12)(pt 121 8))
-	)
-	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect 80 216 248 232)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "C[31..0]" (rect 5 0 45 12)(font "Arial" ))
+	(text "IN_C[31..0]" (rect 5 0 62 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -103,7 +87,7 @@ applicable agreement for further details.
 	(output)
 	(rect 800 376 976 392)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "B_BUS[31..0]" (rect 90 0 157 12)(font "Arial" ))
+	(text "OUT_B[31..0]" (rect 90 0 157 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -317,12 +301,6 @@ applicable agreement for further details.
 	(flipy_rotate90)
 )
 (connector
-	(text "C[31..0]" (rect 424 416 464 428)(font "Arial" ))
-	(pt 504 432)
-	(pt 416 432)
-	(bus)
-)
-(connector
 	(pt 360 400)
 	(pt 504 400)
 )
@@ -356,11 +334,6 @@ applicable agreement for further details.
 (connector
 	(pt 248 64)
 	(pt 288 64)
-	(bus)
-)
-(connector
-	(pt 248 192)
-	(pt 288 192)
 	(bus)
 )
 (connector
@@ -417,4 +390,10 @@ applicable agreement for further details.
 	(text "<<__$DEF_ALIAS23>>" (rect 404 432 516 444)(font "Arial" )(invisible))
 	(pt 400 448)
 	(pt 504 448)
+)
+(connector
+	(text "IN_C[31..0]" (rect 424 416 481 428)(font "Arial" ))
+	(pt 504 432)
+	(pt 416 432)
+	(bus)
 )
