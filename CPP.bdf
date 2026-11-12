@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 168 104 336 120)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "LOAD" (rect 5 0 35 12)(font "Arial" ))
+	(text "LOAD" (rect 5 0 34 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -325,6 +325,47 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 200 176))
 	)
 )
+(symbol
+	(rect 768 184 800 216)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst7" (rect 3 21 26 33)(font "Arial" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 23 12)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
+	(rect 872 128 920 160)
+	(text "WIRE" (rect 1 0 24 10)(font "Arial" (font_size 6)))
+	(text "inst8" (rect 3 21 26 33)(font "Arial" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 14 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 32 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 14 7)(pt 32 16))
+		(line (pt 14 25)(pt 14 7))
+		(line (pt 14 25)(pt 32 16))
+	)
+)
 (connector
 	(pt 336 64)
 	(pt 384 64)
@@ -419,6 +460,36 @@ applicable agreement for further details.
 (connector
 	(pt 928 328)
 	(pt 992 328)
+	(bus)
+)
+(connector
+	(pt 784 184)
+	(pt 784 144)
+)
+(connector
+	(pt 784 144)
+	(pt 872 144)
+)
+(connector
+	(text "IN_LOAD[31..0]" (rect 928 128 1007 140)(font "Arial" ))
+	(pt 920 144)
+	(pt 1024 144)
+	(bus)
+)
+(connector
+	(pt 712 328)
+	(pt 648 328)
+	(bus)
+)
+(connector
+	(pt 648 328)
+	(pt 648 264)
+	(bus)
+)
+(connector
+	(text "IN_LOAD[31..0]" (rect 448 248 527 260)(font "Arial" ))
+	(pt 648 264)
+	(pt 440 264)
 	(bus)
 )
 (junction (pt 688 440))
